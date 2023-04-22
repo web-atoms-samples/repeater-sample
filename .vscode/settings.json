@@ -1,0 +1,27 @@
+{
+    "cSpell.words": [
+        "Atoms's",
+        "Gitlense",
+        "MVVM",
+        "Neuro",
+        "Signup",
+        "Xamarin",
+        "downlevel",
+        "eval",
+        "lifecycle",
+        "lightgray",
+        "postversion",
+        "readonly",
+        "templated",
+        "transpiled"
+    ],
+    "emmet.showExpandedAbbreviation": "never",
+    "editor.bracketPairColorization.enabled": true,
+    "emmet.showSuggestionsAsSnippets": false,
+	"emmet.showAbbreviationSuggestions": false,
+	"emmet.excludeLanguages": [
+		"markdown",
+		"typescript",
+		"typescriptreact"
+	]
+}

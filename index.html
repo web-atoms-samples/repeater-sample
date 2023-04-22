@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"   content="width=device-width"/>
+    <title>Web Atoms - </title>
+    <script src="/node_modules/@web-atoms/module-loader/umd.js"></script>
+    <style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+    </style>
+</head>
+<body>
+    <script src="/.vscode/.waSetup.js"></script>
+    <script>
+        UMD.setupRoot("@web-atoms/intro","");
+        UMD.map("@web-atoms/intro", "");
+        UMD.map("@web-atoms/dev-server", "/_dev");
+        UMD.map("qrcode", "/_dev/node_modules/qrcode");
+        UMD.lang = "en-US";
+        UMD.loadView("@web-atoms/intro/dist/AppIndex", false);
+    </script>
+</body>
+</html>

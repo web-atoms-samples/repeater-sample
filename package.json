@@ -1,0 +1,39 @@
+{
+  "name": "@web-atoms-samples/repeater-samples",
+  "version": "1.0.6",
+  "description": "Samples Repository for Web Atoms Core Samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "postversion": "git push --follow-tags",
+    "start": "node ./node_modules/@web-atoms/typescript-and-http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-atoms-samples/repeater-samples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-atoms-samples/repeater-samples/issues"
+  },
+  "homepage": "https://github.com/web-atoms-samples/repeater-samples#readme",
+  "bundleDependencies": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@web-atoms/core": "^2.2.63",
+    "@web-atoms/data-styles": "^1.0.31",
+    "@web-atoms/date-time": "^1.1.0",
+    "@web-atoms/entity": "^2.4.15",
+    "@web-atoms/font-awesome": "^1.0.37",
+    "@web-atoms/hybrid-clr": "^1.0.21",
+    "@web-atoms/module-loader": "^2.1.18",
+    "@web-atoms/storage": "^2.0.2",
+    "@web-atoms/web-controls": "^2.3.86",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^2.5.0"
+  },
+  "devDependencies": {
+    "@web-atoms/typescript-and-http-server": "^1.0.9"
+  }
+}
