@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "module":"umd",
+        "module":"System",
         "incremental": true,
         "sourceMap": true,
         "removeComments": true,
@@ -10,6 +10,8 @@
         "downlevelIteration": false,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
+        "declaration": false,
+        "importHelpers": true,
         "jsx": "react",
         "jsxFactory": "XNode.create",
         "lib": [
