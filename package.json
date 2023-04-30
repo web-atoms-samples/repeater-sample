@@ -21,15 +21,15 @@
   "bundleDependencies": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0",
-    "@web-atoms/core": "^2.2.65",
-    "@web-atoms/data-styles": "^1.0.31",
+    "@web-atoms/core": "^2.2.80",
+    "@web-atoms/data-styles": "^1.0.33",
     "@web-atoms/date-time": "^1.1.0",
     "@web-atoms/entity": "^2.4.15",
     "@web-atoms/font-awesome": "^1.0.37",
     "@web-atoms/hybrid-clr": "^1.0.21",
     "@web-atoms/module-loader": "^2.1.18",
     "@web-atoms/storage": "^2.0.2",
-    "@web-atoms/web-controls": "^2.3.86",
+    "@web-atoms/web-controls": "^2.3.98",
     "reflect-metadata": "^0.1.13",
     "tslib": "^2.5.0"
   },
