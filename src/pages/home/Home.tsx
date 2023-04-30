@@ -13,6 +13,9 @@ import PersonService, { IPerson } from "../../services/PersonService";
 
 const css = styled.css `
     & .model {
+        margin: 10px;
+        border: solid 1px lightgray;
+        border-radius: 10px;
         display: inline-block;
         width: 150px;
 
@@ -75,6 +78,11 @@ export default class HomePage extends ContentPage {
                 />
 
             <div>
+                To Select the model, click on name, clicking on photo
+                will not select the item, instead it will open photo 
+                on different page. This is done intentionally to demonstrate
+                how click at different descendents will not interefere.
+                <br/><br/>
                 In this example, item-path has been set with each image
                 as `person=$, image=$.images.0`.
                 <br/><br/>
