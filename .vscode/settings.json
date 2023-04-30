@@ -15,6 +15,7 @@
         "templated",
         "transpiled"
     ],
+    "files.autoSave": "afterDelay",
     "emmet.showExpandedAbbreviation": "never",
     "editor.bracketPairColorization.enabled": true,
     "emmet.showSuggestionsAsSnippets": false,
