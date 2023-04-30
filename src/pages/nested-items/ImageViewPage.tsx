@@ -1,6 +1,6 @@
 import XNode from "@web-atoms/core/dist/core/XNode";
 import { ContentPage } from "@web-atoms/web-controls/dist/mobile-app/MobileApp";
-import { IPerson } from "../../model/People";
+import { IPerson } from "../../services/PersonService";
 
 export default class ImageViewPage extends ContentPage<{person: IPerson, image: string}> {
 
