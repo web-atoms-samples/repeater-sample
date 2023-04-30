@@ -86,7 +86,7 @@ export default class HomePage extends ContentPage {
         this.footerRenderer = () => <div
             style-display={Bind.oneWay(() => !!this.selectedItem)}
             data-layout="command-row">
-            <span text={Bind.oneWay(() => `Selected Person is ${this.selectedItem.name}`)}/>
+            <span text={Bind.oneWay(() => `Selected Person is ${this.selectedItem?.name}`)}/>
         </div>;
     }
 
