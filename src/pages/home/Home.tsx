@@ -4,11 +4,12 @@ import CurrencyArray from "../../model/CurrencyArray";
 import { ICurrency } from "../../model/ICurrency";
 import AtomRepeater from "@web-atoms/web-controls/dist/basic/AtomRepeater";
 import Bind from "@web-atoms/core/dist/core/Bind";
-import People, { IPerson } from "../../model/People";
 import Action from "@web-atoms/core/dist/view-model/Action";
 import PageNavigator from "@web-atoms/web-controls/dist/PageNavigator";
 import ImageViewPage from "../nested-items/ImageViewPage";
+import InjectProperty from "@web-atoms/core/dist/core/InjectProperty";
 import styled from "@web-atoms/core/dist/style/styled";
+import PersonService, { IPerson } from "../../services/PersonService";
 
 const css = styled.css `
     & .model {
@@ -50,9 +51,14 @@ export default class HomePage extends ContentPage {
      */
     public selectedItem: IPerson = null;
 
+    @InjectProperty
+    private personService: PersonService;
+
     public async init() {
 
         this.title = "AtomRepeater Sample";
+
+        const models = await this.personService.loadPeople();
 
         this.headerRenderer = () => <div>
             To check other samples, open drawer.
@@ -63,7 +69,7 @@ export default class HomePage extends ContentPage {
 
         this.renderer = <div class={css}>
             <AtomRepeater
-                items={People.females}
+                items={models}
                 itemRenderer={(item) => this.renderModel(item)}
                 selectedItem={Bind.twoWays(() => this.selectedItem)}
                 />
