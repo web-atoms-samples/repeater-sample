@@ -3,6 +3,7 @@ import styled from "@web-atoms/core/dist/style/styled";
 import { Drawer } from "@web-atoms/web-controls/dist/mobile-app/MobileApp";
 import PageNavigator from "@web-atoms/web-controls/dist/PageNavigator";
 import HomePage from "../pages/home/Home";
+import NestedItemsPage from "../pages/nested-items/NestedItemsPage";
 import MultipleSelectionPage from "../pages/selection/MulipleSelectionPage";
 
 const css = styled.css `
@@ -40,6 +41,11 @@ export default class AppMenu extends Drawer {
             <MenuItem
                 label="Multiple Selection"
                 page={MultipleSelectionPage}
+                />
+
+            <MenuItem
+                label="Item Path"
+                page={NestedItemsPage}
                 />
 
         </div>;
