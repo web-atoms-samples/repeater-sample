@@ -28,7 +28,6 @@
     "@web-atoms/font-awesome": "^1.0.37",
     "@web-atoms/hybrid-clr": "^1.0.21",
     "@web-atoms/module-loader": "^2.1.18",
-    "@web-atoms/storage": "^2.0.2",
     "@web-atoms/web-controls": "^2.3.101",
     "reflect-metadata": "^0.1.13",
     "tslib": "^2.5.0"

@@ -18,6 +18,7 @@ import styled from "@web-atoms/core/dist/style/styled";
 
         * {
             font-family: verdana;
+            box-sizing: border-box;
         }
 
         /* Repeater Item style */
